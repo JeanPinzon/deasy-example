@@ -1,19 +1,22 @@
 name: Deasy Example
 schemas:
-- name: Cars
-  slug: cars
+- name: Expenses
+  slug: expenses
   properties:
-    name:
+    description:
       type: string
-    year:
-      type: integer
+    value:
+      type: number
   required:
-    - name
-    - year
-- name: Owners
-  slug: owners
+    - description
+    - value
+- name: Entries
+  slug: entries
   properties:
-    name:
+    description:
       type: string
+    value:
+      type: number
   required:
-    - name
+    - description
+    - value
